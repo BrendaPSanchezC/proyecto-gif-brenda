@@ -22,15 +22,15 @@ onNewCategory( inputValue.trim() );
 }
 // Devolvemos el JSX que se renderizará
 return (
-<form onSubmit={ onSubmit }>
-<input
-type="text"
-placeholder="Buscar gifs"
-// Vinculamos el valor del campo de entrada a inputValue
-value={ inputValue }
-// Cuando cambia el valor del campo de entrada, llamamos a onInputChange
-onChange={ onInputChange }
-/>
-</form>
-)
+        <form onSubmit={ onSubmit }>
+        <input
+            type="text"
+            placeholder="Buscar gifs"
+            // Vinculamos el valor del campo de entrada a inputValue
+            value={ inputValue }
+            // Cuando cambia el valor del campo de entrada, llamamos a onInputChange
+            onChange={ onInputChange }
+            />
+        </form>
+    )
 }

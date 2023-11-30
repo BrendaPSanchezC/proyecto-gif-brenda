@@ -7,11 +7,9 @@ import { GifGrid } from './components/GifGrid';
 const [categories, setCategories] = useState(["Universo"]);
 // Definimos una función onAddCategory que toma un argumento newCategory
 const onAddCategory = (newCategory) => {
-// Si newCategory ya está en la lista de categorías, no hacemos nada y salimos de la
-función
+// Si newCategory ya está en la lista de categorías, no hacemos nada y salimos de la función
 if (categories.includes(newCategory)) return;
-// Si newCategory no está en la lista de categorías, la agregamos al principio de la
-lista
+// Si newCategory no está en la lista de categorías, la agregamos al principio de la lista
 setCategories([newCategory, ...categories]);
 };
 // Devolvemos el JSX que se renderizará
