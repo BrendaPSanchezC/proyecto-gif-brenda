@@ -8,7 +8,7 @@ export const getGifs = async( category ) => {
     const resp = await fetch( url );
     // Extraemos los datos de la respuesta en formato JSON
     const { data } = await resp.json();
-    // Mapeamos los datos a un nuevo arreglo de objetos con id, título y URL de cada imagen
+    // Mapeamos los datos a un nuevo arreglo de objetos con id, título y URL de cada imagenes 
     const gifs = data.map( img => ({
     id: img.id,
     title: img.title,
